@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Date and Time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click to Show Date and Time</h1>
+    <button onclick="showDateTime()">Show Date & Time</button>
+    <div id="output"></div>
+
+    <script>
+        function showDateTime() {
+            const now = new Date();
+            document.getElementById('output').textContent = now.toString();
+        }
+    </script>
+
+</body>
+</html>
